@@ -13,10 +13,14 @@
     <version>0.0.1-SNAPSHOT</version>
     <name>wells-fargo-task-2</name>
     <description>wells-fargo-task-2</description>
+
     <properties>
-        <java.version>19</java.version>
+        <java.version>17</java.version>
     </properties>
+
+
     <dependencies>
+        <!-- Spring Boot JPA and Web -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-jpa</artifactId>
@@ -25,10 +29,19 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
+
+        <!-- H2 Database for testing -->
         <dependency>
             <groupId>com.h2database</groupId>
             <artifactId>h2</artifactId>
             <scope>runtime</scope>
+        </dependency>
+
+        <!-- Spring Boot Test (Optional but recommended) -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
         </dependency>
     </dependencies>
 
@@ -40,5 +53,4 @@
             </plugin>
         </plugins>
     </build>
-
 </project>
